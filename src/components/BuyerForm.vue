@@ -1,6 +1,6 @@
 <template>
-<div class="BuyerForm">
-  <h2>ผู้ซื้อ</h2>
+  <div class="BuyerForm">
+    <h2>ผู้ซื้อ</h2>
     <label>รหัสผู้ค้า (ผู้ซื้อ) : </label><input type="text"/><br>
     <label>รหัสผู้ค้าสากล (ผู้ซื้อ) : </label><input type="text"/><br>
     <label>ชื่อผู้ซื้อ : </label><input type="text"/><br>
@@ -20,7 +20,7 @@
     <label>รหัสไปรษณีย์ (ผู้ซื้อ) : </label><input type="text"/><br>
     <label>ที่อยู่บรรทัดที่ 1 (ผู้ซื้อ) : </label><input type="text"/><br>
     <label>ที่อยู่บรรทัดที่ 2 (ผู้ซื้อ) : </label><input type="text"/><br>
-</div>
+  </div>
 </template>
 
 <script>
