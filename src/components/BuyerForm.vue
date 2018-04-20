@@ -16,7 +16,7 @@
     <label>ตำบล (ผู้ซื้อ) : </label><input type="text"/><br>
     <label>อำเภอ (ผู้ซื้อ) : </label><input type="text"/><br>
     <label>จังหวัด (ผู้ซื้อ) : </label><input type="text"/><br>
-    <label>รหัสประเทศ (ผู้ซื้อ) : </label><input type="text"/><br>
+    <label>ประเทศ (ผู้ซื้อ) : </label><input type="text"/><br>
     <label>รหัสไปรษณีย์ (ผู้ซื้อ) : </label><input type="text"/><br>
     <label>ที่อยู่บรรทัดที่ 1 (ผู้ซื้อ) : </label><input type="text"/><br>
     <label>ที่อยู่บรรทัดที่ 2 (ผู้ซื้อ) : </label><input type="text"/><br>
