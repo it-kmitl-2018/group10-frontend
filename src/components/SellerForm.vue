@@ -1,5 +1,5 @@
 <template>
-  <div class="SellerForm">
+  <div class="sellerform">
     <h2>ผู้ขาย</h2>
     <label>รหัสผู้ค้า (ผู้ขาย) : </label><input type="text"/><br>
     <label>รหัสผู้ค้าสากล (ผู้ขาย) : </label><input type="text"/><br>
