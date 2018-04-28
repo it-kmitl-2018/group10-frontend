@@ -41,7 +41,7 @@ export default{
         subDistrict: '',
         district: '',
         subCountry: '',
-        country: '',
+        countrycode: '',
         postcode: '',
         addrLineOne: '',
         addrLineTwo: ''
