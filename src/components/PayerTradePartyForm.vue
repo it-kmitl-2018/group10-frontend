@@ -15,7 +15,7 @@
   <label>ตำบล (ผู้ชำระเงิน) : </label><input type="text" /><br>
   <label>อำเภอ (ผู้ชำระเงิน) : </label><input type="text" /><br>
   <label>จังหวัด (ผู้ชำระเงิน) : </label><input type="text" /><br>
-  <label>ประเทศ (ผู้ชำระเงิน) : </label><input type="text" /><br>
+  <label>รหัสประเทศ (ผู้ชำระเงิน) : </label><input type="text" /><br>
   <label>รหัสไปรษณีย์ (ผู้ชำระเงิน) : </label><input type="text" /><br>
   <label>ที่อยู่บรรทัดที่ 1 (ผู้ชำระเงิน) : </label><input type="text" /><br>
   <label>ที่อยู่บรรทัดที่ 2 (ผู้ชำระเงิน) : </label><input type="text" /><br>
