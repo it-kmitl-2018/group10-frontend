@@ -2,7 +2,7 @@
 <div class="payeetradepartyform">
   <h2>ผู้ชำรับระเงิน</h2>
   <label>รหัสผู้รับชำระเงิน : </label><input type="text" v-model="id" /><br>
-  <label>รหัสสากล (ผู้รับชำระเงิน) : </label><input type="text" v-model="payerGlobalID"/><br>
+  <label>รหัสสากล (ผู้รับชำระเงิน) : </label><input type="text" v-model="payeeGlobalID"/><br>
   <label>ชื่อผู้รับชำระเงิน : </label><input type="text" v-model="name"/><br>
   <label>เลขประจำตัวผู้เสียภาษีอากร (ผู้รับชำระเงิน) : </label><input type="text" v-model="taxID"/><br>
   <label>อีเมล (ผู้รับชำระเงิน) : </label><input type="text" v-model="email"/><br>
@@ -21,7 +21,7 @@
   <label>ที่อยู่บรรทัดที่ 2 (ผู้รับชำระเงิน) : </label><input type="text" v-model="addrLineTwo"/><br>
 
   <button @click="testjson(id,
-    payerGlobalID,
+    payeeGlobalID,
     name,
     taxID,
     email,
@@ -51,7 +51,7 @@ export default{
     return {
       payeetradeparty: {
         id: '',
-        payerGlobalID: '',
+        payeeGlobalID: '',
         name: '',
         taxID: '',
         email: '',
@@ -73,7 +73,7 @@ export default{
   },
   methods: {
     testjson (id,
-      payerGlobalID,
+      payeeGlobalID,
       name,
       taxID,
       email,
