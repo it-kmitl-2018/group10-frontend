@@ -1,43 +1,43 @@
 <template>
 <div class="payeetradepartyform">
   <h2>ผู้ชำรับระเงิน</h2>
-  <label>รหัสผู้รับชำระเงิน : </label><input type="text" v-model="id" /><br>
+  <label>รหัสผู้รับชำระเงิน : </label><input type="text" v-model="payeeID" /><br>
   <label>รหัสสากล (ผู้รับชำระเงิน) : </label><input type="text" v-model="payeeGlobalID"/><br>
-  <label>ชื่อผู้รับชำระเงิน : </label><input type="text" v-model="name"/><br>
-  <label>เลขประจำตัวผู้เสียภาษีอากร (ผู้รับชำระเงิน) : </label><input type="text" v-model="taxID"/><br>
-  <label>อีเมล (ผู้รับชำระเงิน) : </label><input type="text" v-model="email"/><br>
-  <label>ชื่ออาคาร (ผู้รับชำระเงิน) : </label><input type="text" v-model="buildingName"/><br>
-  <label>บ้านเลขที่ (ผู้รับชำระเงิน) : </label><input type="text" v-model="buildingNo"/><br>
-  <label>ซอย (ผู้รับชำระเงิน) : </label><input type="text" v-model="alley"/><br>
-  <label>หมู่บ้าน (ผู้รับชำระเงิน) : </label><input type="text" v-model="village"/><br>
-  <label>หมู่ที่ (ผู้รับชำระเงิน) : </label><input type="text" v-model="villageNo"/><br>
-  <label>ถนน (ผู้รับชำระเงิน) : </label><input type="text" v-model="street"/><br>
-  <label>ตำบล (ผู้รับชำระเงิน) : </label><input type="text" v-model="subDistrict"/><br>
-  <label>อำเภอ (ผู้รับชำระเงิน) : </label><input type="text" v-model="district"/><br>
-  <label>จังหวัด (ผูรับ้ชำระเงิน) : </label><input type="text" v-model="subCountry"/><br>
-  <label>รหัสประเทศ (ผู้รับชำระเงิน) : </label><input type="text" v-model="countrycode"/><br>
-  <label>รหัสไปรษณีย์ (ผู้รับชำระเงิน) : </label><input type="text" v-model="postcode"/><br>
-  <label>ที่อยู่บรรทัดที่ 1 (ผู้รับชำระเงิน) : </label><input type="text" v-model="addrLineOne"/><br>
-  <label>ที่อยู่บรรทัดที่ 2 (ผู้รับชำระเงิน) : </label><input type="text" v-model="addrLineTwo"/><br>
+  <label>ชื่อผู้รับชำระเงิน : </label><input type="text" v-model="payeeName"/><br>
+  <label>เลขประจำตัวผู้เสียภาษีอากร (ผู้รับชำระเงิน) : </label><input type="text" v-model="payeeTaxID"/><br>
+  <label>อีเมล (ผู้รับชำระเงิน) : </label><input type="text" v-model="payeeEmail"/><br>
+  <label>ชื่ออาคาร (ผู้รับชำระเงิน) : </label><input type="text" v-model="payeeBuildingName"/><br>
+  <label>บ้านเลขที่ (ผู้รับชำระเงิน) : </label><input type="text" v-model="payeeBuildingNo"/><br>
+  <label>ซอย (ผู้รับชำระเงิน) : </label><input type="text" v-model="payeeAlley"/><br>
+  <label>หมู่บ้าน (ผู้รับชำระเงิน) : </label><input type="text" v-model="payeeVillage"/><br>
+  <label>หมู่ที่ (ผู้รับชำระเงิน) : </label><input type="text" v-model="payeeVillageNo"/><br>
+  <label>ถนน (ผู้รับชำระเงิน) : </label><input type="text" v-model="payeeStreet"/><br>
+  <label>ตำบล (ผู้รับชำระเงิน) : </label><input type="text" v-model="payeeSubDistrict"/><br>
+  <label>อำเภอ (ผู้รับชำระเงิน) : </label><input type="text" v-model="payeeDistrict"/><br>
+  <label>จังหวัด (ผูรับ้ชำระเงิน) : </label><input type="text" v-model="payeeSubCountry"/><br>
+  <label>รหัสประเทศ (ผู้รับชำระเงิน) : </label><input type="text" v-model="payeeCountrycode"/><br>
+  <label>รหัสไปรษณีย์ (ผู้รับชำระเงิน) : </label><input type="text" v-model="payeePostcode"/><br>
+  <label>ที่อยู่บรรทัดที่ 1 (ผู้รับชำระเงิน) : </label><input type="text" v-model="payeeAddrLineOne"/><br>
+  <label>ที่อยู่บรรทัดที่ 2 (ผู้รับชำระเงิน) : </label><input type="text" v-model="payeeAddrLineTwo"/><br>
 
-  <button @click="testjson(id,
+  <button @click="testjson(payeeID,
     payeeGlobalID,
-    name,
-    taxID,
-    email,
-    buildingName,
-    buildingNo,
-    alley,
-    village,
-    villageNo,
-    street,
-    subDistrict,
-    district,
-    subCountry,
-    countrycode,
-    postcode,
-    addrLineOne,
-    addrLineTwo)">check json</button>
+    payeeName,
+    payeeTaxID,
+    payeeEmail,
+    payeeBuildingName,
+    payeeBuildingNo,
+    payeeAlley,
+    payeeVillage,
+    payeeVillageNo,
+    payeeStreet,
+    payeeSubDistrict,
+    payeeDistrict,
+    payeeSubCountry,
+    payeeCountryCode,
+    payeePostCode,
+    payeeAddrLineOne,
+    payeeAddrLineTwo)">check json</button>
   <button @click="recieveText()">recieve</button>
 </div>
 </template>
@@ -50,83 +50,83 @@ export default{
   data () {
     return {
       payeetradeparty: {
-        id: '',
+        payeeID: '',
         payeeGlobalID: '',
-        name: '',
-        taxID: '',
-        email: '',
-        buildingName: '',
-        buildingNo: '',
-        alley: '',
-        village: '',
-        villageNo: '',
-        street: '',
-        subDistrict: '',
-        district: '',
-        subCountry: '',
-        countrycode: '',
-        postcode: '',
-        addrLineOne: '',
-        addrLineTwo: ''
+        payeeName: '',
+        payeeTaxID: '',
+        payeeEmail: '',
+        payeeBuildingName: '',
+        payeeBuildingNo: '',
+        payeeAlley: '',
+        payeeVillage: '',
+        payeeVillageNo: '',
+        payeeStreet: '',
+        payeeSubDistrict: '',
+        payeeDistrict: '',
+        payeeSubCountry: '',
+        payeeCountrycode: '',
+        payeePostCode: '',
+        payeeAddrLineOne: '',
+        payeeAddrLineTwo: ''
       }
     }
   },
   methods: {
-    testjson (id,
+    testjson (payeeID,
       payeeGlobalID,
-      name,
-      taxID,
-      email,
-      buildingName,
-      buildingNo,
-      alley,
-      village,
-      villageNo,
-      street,
-      subDistrict,
-      district,
-      subCountry,
-      countrycode,
-      postcode,
-      addrLineOne,
-      addrLineTwo) {
-      this.payeetradeparty.id = id
-      this.payeetradeparty.payerGlobalID = payerGlobalID
-      this.payeetradeparty.name = name
-      this.payeetradeparty.taxID = taxID
-      this.payeetradeparty.email = email
-      this.payeetradeparty.buildingName = buildingName
-      this.payeetradeparty.buildingNo = buildingNo
-      this.payeetradeparty.alley = alley
-      this.payeetradeparty.village = village
-      this.payeetradeparty.villageNo = villageNo
-      this.payeetradeparty.street = street
-      this.payeetradeparty.subDistrict = subDistrict
-      this.payeetradeparty.district = district
-      this.payeetradeparty.subCountry = subCountry
-      this.payeetradeparty.countrycode = countrycode
-      this.payeetradeparty.postcode = postcode
-      this.payeetradeparty.addrLineOne = addrLineOne
-      this.payeetradeparty.addrLineTwo = addrLineTwo
+      payeeName,
+      payeeTaxID,
+      payeeEmail,
+      payeeBuildingName,
+      payeeBuildingNo,
+      payeeAlley,
+      payeeVillage,
+      payeeVillageNo,
+      payeeStreet,
+      payeeSubDistrict,
+      payeeDistrict,
+      payeeSubCountry,
+      payeeCountrycode,
+      payeePostCode,
+      payeeAddrLineOne,
+      payeeAddrLineTwo) {
+      this.payeetradeparty.payeeID = payeeID
+      this.payeetradeparty.payeeGlobalID = payeeGlobalID
+      this.payeetradeparty.payeeName = payeeName
+      this.payeetradeparty.payeeTaxID = payeeTaxID
+      this.payeetradeparty.payeeEmail = payeeEmail
+      this.payeetradeparty.payeeBuildingName = payeeBuildingName
+      this.payeetradeparty.payeeBuildingNo = payeeBuildingNo
+      this.payeetradeparty.payeeAlley = payeeAlley
+      this.payeetradeparty.payeeVillage = payeeVillage
+      this.payeetradeparty.payeeVillageNo = payeeVillageNo
+      this.payeetradeparty.payeeStreet = payeeStreet
+      this.payeetradeparty.payeeSubDistrict = payeeSubDistrict
+      this.payeetradeparty.payeeDistrict = payeeDistrict
+      this.payeetradeparty.payeeSubCountry = payeeSubCountry
+      this.payeetradeparty.payeeCountrycode = payeeCountrycode
+      this.payeetradeparty.payeePostCode = payeePostCode
+      this.payeetradeparty.payeeAddrLineOne = payeeAddrLineOne
+      this.payeetradeparty.payeeAddrLineTwo = payeeAddrLineTwo
       var params = new URLSearchParams()
-      params.append('id', this.payeetradeparty.id)
-      params.append('payerGlobalID', this.payeetradeparty.payerGlobalID)
-      params.append('name', this.payeetradeparty.name)
-      params.append('taxID', this.payeetradeparty.taxID)
-      params.append('email', this.payeetradeparty.email)
-      params.append('buildingName', this.payeetradeparty.buildingName)
-      params.append('buildingNo', this.payeetradeparty.buildingNo)
-      params.append('alley', this.payeetradeparty.alley)
-      params.append('village', this.payeetradeparty.village)
-      params.append('villageNo', this.payeetradeparty.villageNo)
-      params.append('street', this.payeetradeparty.street)
-      params.append('subDistrict', this.payeetradeparty.subDistrict)
-      params.append('district', this.payeetradeparty.district)
-      params.append('subCountry', this.payeetradeparty.subCountry)
-      params.append('countrycode', this.payeetradeparty.countrycode)
-      params.append('postcode', this.payeetradeparty.postcode)
-      params.append('addrLineOne', this.payeetradeparty.addrLineOne)
-      params.append('addrLineTwo', this.payeetradeparty.addrLineTwo)
+      params.append('payeeID', this.payeetradeparty.payeeID)
+      params.append('payeeGlobalID', this.payeetradeparty.payeeGlobalID)
+      params.append('payeeName', this.payeetradeparty.payeeName)
+      params.append('payeeTaxID', this.payeetradeparty.payeeTaxID)
+      params.append('payeeEmail', this.payeetradeparty.payeeEmail)
+      params.append('payeeBuildingName', this.payeetradeparty.payeeBuildingName)
+      params.append('payeeBuildingNo', this.payeetradeparty.payeeBuildingNo)
+      params.append('payeeAlley', this.payeetradeparty.payeeAlley)
+      params.append('payeeVillage', this.payeetradeparty.payeeVillage)
+      params.append('payeeVillageNo', this.payeetradeparty.payeeVillageNo)
+      params.append('payeeStreet', this.payeetradeparty.payeeStreet)
+      params.append('payeeSubDistrict', this.payeetradeparty.payeeSubDistrict)
+      params.append('payeeDistrict', this.payeetradeparty.payeeDistrict)
+      params.append('payeeSubCountry', this.payeetradeparty.payeeSubCountry)
+      params.append('payeeCountryCode', this.payeetradeparty.payeeCountrycode)
+      params.append('payeePostCode', this.payeetradeparty.payeePostCode)
+      params.append('payeeAddrLineOne', this.payeetradeparty.payeeAddrLineOne)
+      params.append('payeeAddrLineTwo', this.payeetradeparty.payeeAddrLineTwo)
       alert(JSON.stringify(this.payeetradeparty))
       AXIOS.post(`/infopayee`, params)
         .then(response => {
