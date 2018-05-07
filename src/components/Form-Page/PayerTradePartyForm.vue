@@ -87,51 +87,51 @@ export default{
       payerPostCode,
       payerAddrLineOne,
       payerAddrLineTwo) {
-      this.payertradeparty.payerID = payerID
-      this.payertradeparty.payerGlobalID = payerGlobalID
-      this.payertradeparty.payerName = payerName
-      this.payertradeparty.payerTaxID = payerTaxID
-      this.payertradeparty.payerEmail = payerEmail
-      this.payertradeparty.payerBuildingName = payerBuildingName
-      this.payertradeparty.payerBuildingNo = payerBuildingNo
-      this.payertradeparty.payerAlley = payerAlley
-      this.payertradeparty.payerVillage = payerVillage
-      this.payertradeparty.payerVillageNo = payerVillageNo
-      this.payertradeparty.payerStreet = payerStreet
-      this.payertradeparty.payerSubDistrict = payerSubDistrict
-      this.payertradeparty.payerDistrict = payerDistrict
-      this.payertradeparty.payerSubCountry = payerSubCountry
-      this.payertradeparty.payerCountrycode = payerCountrycode
-      this.payertradeparty.payerPostCode = payerPostCode
-      this.payertradeparty.payerAddrLineOne = payerAddrLineOne
-      this.payertradeparty.payerAddrLineTwo = payerAddrLineTwo
-      var params = new URLSearchParams()
-      params.append('payerID', this.payertradeparty.payerID)
-      params.append('payerGlobalID', this.payertradeparty.payerGlobalID)
-      params.append('payerName', this.payertradeparty.payerName)
-      params.append('payerTaxID', this.payertradeparty.payerTaxID)
-      params.append('payerEmail', this.payertradeparty.payerEmail)
-      params.append('payerBuildingName', this.payertradeparty.payerBuildingName)
-      params.append('payerBuildingNo', this.payertradeparty.payerBuildingNo)
-      params.append('payerAlley', this.payertradeparty.payerAlley)
-      params.append('payerVillage', this.payertradeparty.payerVillage)
-      params.append('payerVillageNo', this.payertradeparty.payerVillageNo)
-      params.append('payerStreet', this.payertradeparty.payerStreet)
-      params.append('payerSubDistrict', this.payertradeparty.payerSubDistrict)
-      params.append('payerDistrict', this.payertradeparty.payerDistrict)
-      params.append('payerSubCountry', this.payertradeparty.payerSubCountry)
-      params.append('payerCountryCode', this.payertradeparty.payerCountrycode)
-      params.append('payerPostCode', this.payertradeparty.payerPostCode)
-      params.append('payerAddrLineOne', this.payertradeparty.payerAddrLineOne)
-      params.append('payerAddrLineTwo', this.payertradeparty.payerAddrLineTwo)
-      alert(JSON.stringify(this.payertradeparty))
-      AXIOS.post(`/infopayer`, params)
-        .then(response => {
-          this.payertradeparty = response.data
-          console.log(response.data)
-        }).catch(e => {
-          this.error.push(e)
-        })
+      // this.payertradeparty.payerID = payerID
+      // this.payertradeparty.payerGlobalID = payerGlobalID
+      // this.payertradeparty.payerName = payerName
+      // this.payertradeparty.payerTaxID = payerTaxID
+      // this.payertradeparty.payerEmail = payerEmail
+      // this.payertradeparty.payerBuildingName = payerBuildingName
+      // this.payertradeparty.payerBuildingNo = payerBuildingNo
+      // this.payertradeparty.payerAlley = payerAlley
+      // this.payertradeparty.payerVillage = payerVillage
+      // this.payertradeparty.payerVillageNo = payerVillageNo
+      // this.payertradeparty.payerStreet = payerStreet
+      // this.payertradeparty.payerSubDistrict = payerSubDistrict
+      // this.payertradeparty.payerDistrict = payerDistrict
+      // this.payertradeparty.payerSubCountry = payerSubCountry
+      // this.payertradeparty.payerCountrycode = payerCountrycode
+      // this.payertradeparty.payerPostCode = payerPostCode
+      // this.payertradeparty.payerAddrLineOne = payerAddrLineOne
+      // this.payertradeparty.payerAddrLineTwo = payerAddrLineTwo
+      // var params = new URLSearchParams()
+      // params.append('payerID', this.payertradeparty.payerID)
+      // params.append('payerGlobalID', this.payertradeparty.payerGlobalID)
+      // params.append('payerName', this.payertradeparty.payerName)
+      // params.append('payerTaxID', this.payertradeparty.payerTaxID)
+      // params.append('payerEmail', this.payertradeparty.payerEmail)
+      // params.append('payerBuildingName', this.payertradeparty.payerBuildingName)
+      // params.append('payerBuildingNo', this.payertradeparty.payerBuildingNo)
+      // params.append('payerAlley', this.payertradeparty.payerAlley)
+      // params.append('payerVillage', this.payertradeparty.payerVillage)
+      // params.append('payerVillageNo', this.payertradeparty.payerVillageNo)
+      // params.append('payerStreet', this.payertradeparty.payerStreet)
+      // params.append('payerSubDistrict', this.payertradeparty.payerSubDistrict)
+      // params.append('payerDistrict', this.payertradeparty.payerDistrict)
+      // params.append('payerSubCountry', this.payertradeparty.payerSubCountry)
+      // params.append('payerCountryCode', this.payertradeparty.payerCountrycode)
+      // params.append('payerPostCode', this.payertradeparty.payerPostCode)
+      // params.append('payerAddrLineOne', this.payertradeparty.payerAddrLineOne)
+      // params.append('payerAddrLineTwo', this.payertradeparty.payerAddrLineTwo)
+      // alert(JSON.stringify(this.payertradeparty))
+      // AXIOS.post(`/infopayer`, params)
+      //   .then(response => {
+      //     this.payertradeparty = response.data
+      //     console.log(response.data)
+      //   }).catch(e => {
+      //     this.error.push(e)
+      //   })
     }
   }
 }

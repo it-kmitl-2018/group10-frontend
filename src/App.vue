@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div>
-        <router-link :to="{name: 'app'}"> หน้าแรก </router-link>
+        <router-link :to="{name: 'App'}"> หน้าแรก </router-link>
         <router-link :to="{name: 'ElectronicReceiptForm'}"> ใบเสร็จ </router-link>
         <!-- <router-link :to="{name: 'EReceiptForm'}"> ใบเสร็จ </router-link>
         <router-link :to="{name: 'ETaxInvoiceForm'}"> ใบแจ้งหนี้ </router-link> -->
