@@ -3,16 +3,16 @@
     <br>
     <h1>ใบเสร็จอิเล็กทรอนิกส์</h1>
     <PayeeTradePartyForm :PayeeTradePartyFormProp="payee"></PayeeTradePartyForm>
-    <PayerTradePartyForm :PayerTradePartyFormProp="payer"></PayerTradePartyForm>
+    <!-- <PayerTradePartyForm :PayerTradePartyFormProp="payer"></PayerTradePartyForm> -->
     <button @click="testjson()">check json all</button>
   </div>
 </template>
 <script>
-import PayeeTradePartyForm from '@/components/Form-Page/PayeeTradePartyForm'
-import PayerTradePartyForm from '@/components/Form-Page/PayerTradePartyForm'
-import PayeeTradePartyData from '@/Data/PayeeTradeParty.data.js'
-import PayerTradePartyData from '@/Data/PayerTradeParty.data.js'
-import {AXIOS} from '@/Components/http-commons.js'
+import PayeeTradePartyForm from '@/components/Form-Page/payeeTradePartyForm'
+import PayerTradePartyForm from '@/components/Form-Page/payerTradePartyForm'
+import PayeeTradePartyData from '@/Data/payeeTradeParty.data.js'
+import PayerTradePartyData from '@/Data/payerTradeParty.data.js'
+import {AXIOS} from '@/components/http-commons.js'
 export default {
   data () {
     return {
@@ -26,12 +26,10 @@ export default {
   },
   methods: {
     testjson () {
-      alert(JSON.stringify(PayeeTradePartyData))
-      var params = new URLSearchParams()
-      params.append('PayeeTradePartyData', PayeeTradePartyData)
-      AXIOS.post('/infopayee', params)
+      console.log(JSON.stringify(PayeeTradePartyData.data))
+      AXIOS.post('/ElectronicReceipt', JSON.stringify(PayeeTradePartyData.data))
         .then(response => {
-          console.log(response.data)
+          console.log(params)
         }).catch(e => {
           this.error.push(e)
         })

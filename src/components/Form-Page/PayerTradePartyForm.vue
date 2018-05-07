@@ -40,7 +40,7 @@
 </div>
 </template>
 <script>
-import {AXIOS} from '../http-commons'
+// import {AXIOS} from '../http-commons'
 
 export default{
   name: 'payertradepartyform',

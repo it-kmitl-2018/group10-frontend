@@ -35,7 +35,7 @@
   <label>อำเภอ (ผู้รับชำระเงิน) : </label><input type="text" v-model="PayeeTradePartyFormProp.payeeDistrict"/><br>
   <label>จังหวัด (ผูรับ้ชำระเงิน) : </label><input type="text" v-model="PayeeTradePartyFormProp.payeeSubCountry"/><br>
   <label>รหัสประเทศ (ผู้รับชำระเงิน) : </label><input type="text" v-model="PayeeTradePartyFormProp.payeeCountrycode"/><br>
-  <label>รหัสไปรษณีย์ (ผู้รับชำระเงิน) : </label><input type="text" v-model="PayeeTradePartyFormProp.payeePostcode"/><br>
+  <label>รหัสไปรษณีย์ (ผู้รับชำระเงิน) : </label><input type="text" v-model="PayeeTradePartyFormProp.payeePostCode"/><br>
   <label>ที่อยู่บรรทัดที่ 1 (ผู้รับชำระเงิน) : </label><input type="text" v-model="PayeeTradePartyFormProp.payeeAddrLineOne"/><br>
   <label>ที่อยู่บรรทัดที่ 2 (ผู้รับชำระเงิน) : </label><input type="text" v-model="PayeeTradePartyFormProp.payeeAddrLineTwo"/><br>
 
@@ -65,9 +65,6 @@
 // import {AXIOS} from '../http-commons'
 
 export default{
-  props: ['PayeeTradePartyFormProp'],
-  methods: {
-
-  }
+  props: ['PayeeTradePartyFormProp']
 }
 </script>
