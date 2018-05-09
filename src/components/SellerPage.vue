@@ -23,7 +23,7 @@ export default {
   },
   methods: {
     callRestService () {
-      var params = new URLSearchParams()
+      let params = new URLSearchParams()
       params.set('id', this.seller.id)
       params.set('globalID', this.seller.globalID)
       params.set('name', this.seller.name)
