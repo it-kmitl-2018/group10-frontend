@@ -3,10 +3,14 @@
     <br>
     <h1>ใบเสร็จอิเล็กทรอนิกส์</h1>
     <div>
-      <PayeeTradePartyForm :PayeeTradePartyFormProp="payee"></PayeeTradePartyForm>
-      <PayerTradePartyForm :PayerTradePartyFormProp="payer"></PayerTradePartyForm>
+      <div>
+        <PayeeTradePartyForm :PayeeTradePartyFormProp="payee"></PayeeTradePartyForm>
+      </div>
+      <div>
+        <PayerTradePartyForm :PayerTradePartyFormProp="payer"></PayerTradePartyForm>
+      </div>
     </div>
-    <button @click="sendData()">check json all</button>
+    <button @click="sendData()">ส่งข้อมูล</button>
   </div>
 </template>
 <script>
@@ -31,7 +35,7 @@ export default {
       console.log(JSON.stringify(PayeeTradePartyData.data))
       AXIOS.post('/ElectronicReceipt', [PayeeTradePartyData.data, PayerTradePartyData.data])
         .then(response => {
-
+          console.log(response.data)
         }).catch(e => {
           this.error.push(e)
         })
