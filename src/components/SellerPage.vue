@@ -23,6 +23,16 @@ export default {
   },
   methods: {
     callRestService () {
+      let params = this.setParameter()
+      AXIOS.post('/postsellerinfo', params)
+        .then(function (response) {
+          console.log(response)
+        })
+        .catch(function (error) {
+          console.log(error)
+        })
+    },
+    setParameter () {
       let params = new URLSearchParams()
       params.set('id', this.seller.id)
       params.set('globalID', this.seller.globalID)
@@ -43,13 +53,7 @@ export default {
       params.set('postcode', this.seller.postcode)
       params.set('addrLineOne', this.seller.addrLineOne)
       params.set('addrLineTwo', this.seller.addrLineTwo)
-      AXIOS.post('/postsellerinfo', params)
-        .then(function (response) {
-          console.log(response)
-        })
-        .catch(function (error) {
-          console.log(error)
-        })
+      return params
     }
   }
 }
