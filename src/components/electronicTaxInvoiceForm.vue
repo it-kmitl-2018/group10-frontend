@@ -1,13 +1,13 @@
 <template>
-  <div class="ElectronicReceiptForm">
+  <div class="ElectronicTaxInvoiceForm">
     <br>
     <h1>ใบเสร็จอิเล็กทรอนิกส์</h1>
     <div>
       <div>
-        <PayeeTradePartyForm :PayeeTradePartyFormProp="payee"></PayeeTradePartyForm>
+        <PayerTradePartyForm :PayerTradePartyFormProp="payer"></PayerTradePartyForm>
       </div>
       <div>
-        <PayerTradePartyForm :PayerTradePartyFormProp="payer"></PayerTradePartyForm>
+        <PayeeTradePartyForm :PayeeTradePartyFormProp="payee"></PayeeTradePartyForm>
       </div>
     </div>
     <button @click="sendData()">ส่งข้อมูล</button>

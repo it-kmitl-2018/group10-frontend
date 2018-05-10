@@ -1,6 +1,6 @@
 <template>
 <div class="payeetradepartyform">
-  <h2>ผู้ชำรับระเงิน</h2>
+  <h2>ผู้รับชำระเงิน</h2>
 
   <label>รหัสผู้รับชำระเงิน : </label><input type="text" v-model="PayeeTradePartyFormProp.payeeID" /><br>
   <label>รหัสสากล (ผู้รับชำระเงิน) : </label><input type="text" v-model="PayeeTradePartyFormProp.payeeGlobalID"/><br>
