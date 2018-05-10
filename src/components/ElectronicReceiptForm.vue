@@ -2,9 +2,11 @@
   <div class="ElectronicReceiptForm">
     <br>
     <h1>ใบเสร็จอิเล็กทรอนิกส์</h1>
-    <PayeeTradePartyForm :PayeeTradePartyFormProp="payee"></PayeeTradePartyForm>
-    <!-- <PayerTradePartyForm :PayerTradePartyFormProp="payer"></PayerTradePartyForm> -->
-    <button @click="testjson()">check json all</button>
+    <div>
+      <PayeeTradePartyForm :PayeeTradePartyFormProp="payee"></PayeeTradePartyForm>
+      <PayerTradePartyForm :PayerTradePartyFormProp="payer"></PayerTradePartyForm>
+    </div>
+    <button @click="sendData()">check json all</button>
   </div>
 </template>
 <script>
@@ -25,11 +27,11 @@ export default {
     PayerTradePartyForm
   },
   methods: {
-    testjson () {
+    sendData () {
       console.log(JSON.stringify(PayeeTradePartyData.data))
-      AXIOS.post('/ElectronicReceipt', JSON.stringify(PayeeTradePartyData.data))
+      AXIOS.post('/ElectronicReceipt', [PayeeTradePartyData.data, PayerTradePartyData.data])
         .then(response => {
-          console.log(params)
+
         }).catch(e => {
           this.error.push(e)
         })

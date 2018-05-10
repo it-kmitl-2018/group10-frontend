@@ -14,7 +14,7 @@ export default{
     payerSubDistrict: '',
     payerDistrict: '',
     payerSubCountry: '',
-    payerCountrycode: '',
+    payerCountryCode: '',
     payerPostCode: '',
     payerAddrLineOne: '',
     payerAddrLineTwo: ''
