@@ -1,10 +1,10 @@
 <template>
   <div>
-    เลขประจำตัวผู้เสียภาษีอากร : <input v-model="documentIssuerFormProp.taxID"/><br>
+    เลขประจำตัวผู้เสียภาษีอากร : <input v-model="specifiedTaxRegistrationProp.taxID"/><br>
   </div>
 </template>
 <script>
 export default {
-  props: ['documentIssuerFormProp']
+  props: ['specifiedTaxRegistrationProp']
 }
 </script>

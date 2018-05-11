@@ -1,12 +1,12 @@
 <template>
   <div>
-    รหัสผู้ค้า(ผู้ออกเอกสารแทน) : <input v-model="documentIssuerFormProp.id"/><br>
-    รหัสผู้ค้าสากล(ผู้ออกเอกสารแทน) : <input v-model="documentIssuerFormProp.globalID"/><br>
-    ชื่อผู้ขาย : <input v-model="documentIssuerFormProp.name"/><br>
+    รหัสผู้แทนออกเอกสาร : <input v-model="invoiceTradePartyProp.id"/><br>
+    รหัสสากล : <input v-model="invoiceTradePartyProp.globalID"/><br>
+    ชื่อผู้ออกเอกสารแทน : <input v-model="invoiceTradePartyProp.name"/><br>
   </div>
 </template>
 <script>
 export default {
-  props: ['documentIssuerFormProp']
+  props: ['invoiceTradePartyProp']
 }
 </script>
