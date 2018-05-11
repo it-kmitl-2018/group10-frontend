@@ -1,11 +1,11 @@
 <template>
   <div>
-    อีเมล: <input v-model="documentRecipientFormProp.email"/><br>
-    เบอร์โทรศัพท์: <input v-model="documentRecipientFormProp.phoneNumber"/><br>
+    อีเมล: <input v-model="emailAndPhoneProp.email"/><br>
+    เบอร์โทรศัพท์: <input v-model="emailAndPhoneProp.phoneNumber"/><br>
   </div>
 </template>
 <script>
 export default {
-  props: ['documentRecipientFormProp']
+  props: ['emailAndPhoneProp']
 }
 </script>
