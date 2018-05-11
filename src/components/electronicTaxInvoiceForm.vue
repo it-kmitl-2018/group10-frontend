@@ -18,7 +18,7 @@ import PayeeTradePartyForm from '@/components/Form-Page/PayeeTradePartyForm'
 import PayerTradePartyForm from '@/components/Form-Page/PayerTradePartyForm'
 import PayeeTradePartyData from '@/Data/PayeeTradeParty.data.js'
 import PayerTradePartyData from '@/Data/PayerTradeParty.data.js'
-import {AXIOS} from '@/http-commons.js'
+import {AXIOS} from '@/http-common.js'
 export default {
   data () {
     return {
