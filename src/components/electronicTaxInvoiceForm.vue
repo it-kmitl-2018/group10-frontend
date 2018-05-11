@@ -14,8 +14,8 @@
   </div>
 </template>
 <script>
-import PayeeTradePartyForm from '@/components/Form-Page/payeeTradePartyForm'
-import PayerTradePartyForm from '@/components/Form-Page/payerTradePartyForm'
+import PayeeTradePartyForm from '@/components/Form-Page/PayeeTradePartyForm'
+import PayerTradePartyForm from '@/components/Form-Page/PayerTradePartyForm'
 import PayeeTradePartyData from '@/Data/PayeeTradeParty.data.js'
 import PayerTradePartyData from '@/Data/PayerTradeParty.data.js'
 import {AXIOS} from '@/components/http-commons.js'
