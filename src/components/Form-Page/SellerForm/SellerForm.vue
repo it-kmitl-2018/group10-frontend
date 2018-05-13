@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import Information from '@/components/SellerForm/components/Information.vue'
-import PostalAddress from '@/components/SellerForm/components/PostalAddress.vue'
+import Information from '@/components/Form-Page/SellerForm/components/Information.vue'
+import PostalAddress from '@/components/Form-Page/SellerForm/components/PostalAddress.vue'
 
 export default {
   name: 'sellerForm',
