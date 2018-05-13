@@ -1,6 +1,6 @@
 export default {
   data: {
-    invoiceeTradeParty: {
+    invoiceTradeParty: {
       id: '',
       globalID: '',
       name: ''
@@ -8,9 +8,8 @@ export default {
     specifiedTaxRegistration: {
       taxID: ''
     },
-    emailAndPhone: {
-      email: '',
-      phoneNumber: ''
+    email: {
+      email: ''
     },
     postalTradeAddress: {
       postalCode: '',
