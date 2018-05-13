@@ -6,11 +6,9 @@ export default {
         globalID: '',
         name: '',
         taxID: '',
-        branchNo: '',
         email: '',
         buildingName: '',
         buildingNo: '',
-        lineThree: '',
         alley: '',
         village: '',
         villageNo: '',
@@ -19,7 +17,7 @@ export default {
         district: '',
         subCountry: '',
         country: '',
-        postcode: '',
+        postCode: '',
         addrLineOne: '',
         addrLineTwo: ''
       }
