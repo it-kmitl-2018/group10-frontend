@@ -1,10 +1,10 @@
 <template>
 <div class="payeetradepartyform">
   <h2>ผู้รับชำระเงิน</h2>
-    <PayeeTradePartyConfirm :ConfirmPayeeTradePartyProp="ConfirmPayeeProps.payerPayeeTradeParty"></PayeeTradePartyConfirm>
-    <PayeeEmailConfirm :ConfirmPayeeEmailProp="ConfirmPayeeProps.payerPayeeEmail"></PayeeEmailConfirm>
-    <PayeeSpecifiedTaxRegistrationConfirm :ConfirmPayeeSpecifiedTaxRegistrationProp="ConfirmPayeeProps.payerPayeeSpecifiedTaxRegistration"></PayeeSpecifiedTaxRegistrationConfirm>
-    <PayeeTradePartyAddressConfirm :ConfirmPayeeTradePartyAddressProp="ConfirmPayeeProps.payerPayeeTradePartyAddress"></PayeeTradePartyAddressConfirm>
+    <PayeeTradePartyConfirm :confirmPayeeTradePartyProp="confirmPayeeProps.payerPayeeTradeParty"></PayeeTradePartyConfirm>
+    <PayeeEmailConfirm :confirmPayeeEmailProp="confirmPayeeProps.payerPayeeEmail"></PayeeEmailConfirm>
+    <PayeeSpecifiedTaxRegistrationConfirm :confirmPayeeSpecifiedTaxRegistrationProp="confirmPayeeProps.payerPayeeSpecifiedTaxRegistration"></PayeeSpecifiedTaxRegistrationConfirm>
+    <PayeeTradePartyAddressConfirm :confirmPayeeTradePartyAddressProp="confirmPayeeProps.payerPayeeTradePartyAddress"></PayeeTradePartyAddressConfirm>
 
 </div>
 </template>
@@ -21,6 +21,6 @@ export default{
     PayeeTradePartyConfirm,
     PayeeTradePartyAddressConfirm
   },
-  props: ['ConfirmPayeeProps']
+  props: ['confirmPayeeProps']
 }
 </script>
