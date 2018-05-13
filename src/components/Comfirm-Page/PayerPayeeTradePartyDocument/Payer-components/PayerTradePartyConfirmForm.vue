@@ -1,10 +1,10 @@
 <template>
 <div class="payertradepartyconfirmform">
   <h2>ผู้ชำระเงิน</h2>
-  <PayerTradePartyConfirm :ConfirmPayerTradePartyProp="ConfirmPayerProps.payerPayeeTradeParty"></PayerTradePartyConfirm>
-  <PayerEmailConfirm :ConfirmPayerEmailProp="ConfirmPayerProps.payerPayeeEmail"></PayerEmailConfirm>
-  <PayerSpecifiedTaxRegistrationConfirm :ConfirmPayerSpecifiedTaxRegistrationProp="ConfirmPayerProps.payerPayeeSpecifiedTaxRegistration"></PayerSpecifiedTaxRegistrationConfirm>
-  <PayerTradePartyAddressConfirm :ConfirmPayerTradePartyAddressProp="ConfirmPayerProps.payerPayeeTradePartyAddress"></PayerTradePartyAddressConfirm>
+  <PayerTradePartyConfirm :confirmPayerTradePartyProp="confirmPayerProps.payerPayeeTradeParty"></PayerTradePartyConfirm>
+  <PayerEmailConfirm :confirmPayerEmailProp="confirmPayerProps.payerPayeeEmail"></PayerEmailConfirm>
+  <PayerSpecifiedTaxRegistrationConfirm :confirmPayerSpecifiedTaxRegistrationProp="confirmPayerProps.payerPayeeSpecifiedTaxRegistration"></PayerSpecifiedTaxRegistrationConfirm>
+  <PayerTradePartyAddressConfirm :confirmPayerTradePartyAddressProp="confirmPayerProps.payerPayeeTradePartyAddress"></PayerTradePartyAddressConfirm>
 </div>
 </template>
 <script>
@@ -20,7 +20,7 @@ export default{
     PayerTradePartyConfirm,
     PayerTradePartyAddressConfirm
   },
-  props: ['ConfirmPayerProps']
+  props: ['confirmPayerProps']
 }
 
 </script>
