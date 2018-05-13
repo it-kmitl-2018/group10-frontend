@@ -2,12 +2,12 @@
   <div class="sellerform">
     <h2>ผู้ขาย</h2>
     <information :information='sellerForm.information'></information>
-    <postal-address :address='sellerForm.postalAddress'></postal-address>
+    <postal-address :postalAddress='sellerForm.postalAddress'></postal-address>
   </div>
 </template>
 
 <script>
-import Information from '@/components/SellerForm/components/SellerInformation.vue'
+import Information from '@/components/SellerForm/components/Information.vue'
 import PostalAddress from '@/components/SellerForm/components/PostalAddress.vue'
 
 export default {
