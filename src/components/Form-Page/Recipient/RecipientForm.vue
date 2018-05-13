@@ -1,10 +1,10 @@
 <template>
   <div>
     <h2>ผู้รับ</h2>
-    <ship-to-trade-party :shipToTradePartyProp="recipientFormProp.invoiceTradeParty"></ship-to-trade-party>
-    <specified-tax-registration :specifiedTaxRegistrationProp="recipientFormProp.specifiedTaxRegistration"></specified-tax-registration>
-    <email :emailProp="recipientFormProp.email"></email>
-    <postal-trade-address :postalTradeAddressProp="recipientFormProp.postalTradeAddress"></postal-trade-address>
+    <ship-to-trade-party :shipToTradePartyProp="recipientProp.invoiceTradeParty"></ship-to-trade-party>
+    <specified-tax-registration :specifiedTaxRegistrationProp="recipientProp.specifiedTaxRegistration"></specified-tax-registration>
+    <email :emailProp="recipientProp.email"></email>
+    <postal-trade-address :postalTradeAddressProp="recipientProp.postalTradeAddress"></postal-trade-address>
   </div>
 </template>
 
