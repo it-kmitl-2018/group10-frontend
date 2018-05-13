@@ -1,10 +1,10 @@
 <template>
 <div class="payertradepartyform">
   <h2>ผู้ชำระเงิน</h2>
-  <PayerTradeParty :PayerTradePartyProp="payer.payerPayeeTradeParty"></PayerTradeParty>
-  <PayerEmail :PayerEmailProp="payer.payerPayeeEmail"></PayerEmail>
-  <PayerSpecifiedTaxRegistration :PayerSpecifiedTaxRegistrationProp="payer.payerPayeeSpecifiedTaxRegistration"></PayerSpecifiedTaxRegistration>
-  <PayerTradePartyAddress :PayerTradePartyAddressProp="payer.payerPayeeTradePartyAddress"></PayerTradePartyAddress>
+  <PayerTradeParty :PayerTradePartyProp="PayerProps.payerPayeeTradeParty"></PayerTradeParty>
+  <PayerEmail :PayerEmailProp="PayerProps.payerPayeeEmail"></PayerEmail>
+  <PayerSpecifiedTaxRegistration :PayerSpecifiedTaxRegistrationProp="PayerProps.payerPayeeSpecifiedTaxRegistration"></PayerSpecifiedTaxRegistration>
+  <PayerTradePartyAddress :PayerTradePartyAddressProp="PayerProps.payerPayeeTradePartyAddress"></PayerTradePartyAddress>
 </div>
 </template>
 <script>
@@ -12,13 +12,8 @@ import PayerEmail from '@/components/Form-Page//PayerPayeeTradePartyDocument/Pay
 import PayerSpecifiedTaxRegistration from '@/components/Form-Page//PayerPayeeTradePartyDocument/Payer-components/PayerSpecifiedTaxRegistration.vue'
 import PayerTradeParty from '@/components/Form-Page//PayerPayeeTradePartyDocument/Payer-components/PayerTradeParty.vue'
 import PayerTradePartyAddress from '@/components/Form-Page/PayerPayeeTradePartyDocument/Payer-components/PayerTradePartyAddress.vue'
-import PayerPayeeTradePartyData from '@/Data/PayerPayeeTradeParty.data.js'
+
 export default{
-  data () {
-    return {
-      payer: PayerPayeeTradePartyData.data
-    }
-  },
   components: {
     PayerEmail,
     PayerSpecifiedTaxRegistration,

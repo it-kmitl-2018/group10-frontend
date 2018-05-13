@@ -3,11 +3,12 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
+import TradePartyData from '@/Data/PayerPayeeTradeParty.data.js'
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
+  TradePartyData,
   el: '#app',
   router,
   components: { App },
