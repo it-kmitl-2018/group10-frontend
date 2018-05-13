@@ -9,7 +9,6 @@
 <script>
 import Information from '@/components/SellerForm/components/SellerInformation.vue'
 import PostalAddress from '@/components/SellerForm/components/PostalAddress.vue'
-import SellerData from '@/Data/Seller.data.js'
 
 export default {
   name: 'sellerform',
