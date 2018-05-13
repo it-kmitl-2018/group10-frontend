@@ -1,8 +1,8 @@
 <template>
   <div class="sellerform">
     <h2>ผู้ขาย</h2>
-    <information :information='seller.information'></information>
-    <postal-address :address='seller.postalAddress'></postal-address>
+    <information :information='sellerform.information'></information>
+    <postal-address :address='sellerform.postalAddress'></postal-address>
   </div>
 </template>
 
@@ -17,11 +17,6 @@ export default {
   components: {
     Information,
     PostalAddress
-  },
-  data () {
-    return {
-      seller: SellerData.data
-    }
   }
 }
 </script>
