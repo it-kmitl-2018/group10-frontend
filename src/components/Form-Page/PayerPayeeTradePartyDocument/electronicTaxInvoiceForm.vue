@@ -31,7 +31,7 @@ export default {
   },
   methods: {
     sendData () {
-      console.log(JSON.stringify(payerPayeeTradePartyData.data))
+      console.log(JSON.stringify(PayerProps))
       AXIOS.post('/ElectronicReceipt', payerPayeeTradePartyData.data)
         .then(response => {
           console.log(response.data)

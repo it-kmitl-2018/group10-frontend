@@ -9,7 +9,7 @@
     <label>ตำบล (ผู้รับชำระเงิน) : </label><input type="text" v-model="PayeeTradePartyAddressProp.SubDistrict"/><br>
     <label>อำเภอ (ผู้รับชำระเงิน) : </label><input type="text" v-model="PayeeTradePartyAddressProp.District"/><br>
     <label>จังหวัด (ผูรับ้ชำระเงิน) : </label><input type="text" v-model="PayeeTradePartyAddressProp.SubCountry"/><br>
-    <label>รหัสประเทศ (ผู้รับชำระเงิน) : </label><input type="text" v-model="PayeeTradePartyAddressProp.Countrycode"/><br>
+    <label>รหัสประเทศ (ผู้รับชำระเงิน) : </label><input type="text" v-model="PayeeTradePartyAddressProp.CountryCode"/><br>
     <label>รหัสไปรษณีย์ (ผู้รับชำระเงิน) : </label><input type="text" v-model="PayeeTradePartyAddressProp.PostCode"/><br>
     <label>ที่อยู่บรรทัดที่ 1 (ผู้รับชำระเงิน) : </label><input type="text" v-model="PayeeTradePartyAddressProp.AddrLineOne"/><br>
     <label>ที่อยู่บรรทัดที่ 2 (ผู้รับชำระเงิน) : </label><input type="text" v-model="PayeeTradePartyAddressProp.AddrLineTwo"/><br>
