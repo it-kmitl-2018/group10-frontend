@@ -10,10 +10,10 @@
 </template>
 
 <script>
-import PayeeEmailConfirm from '@/components/Form-Page/PayerPayeeTradePartyDocument/Payee-components/PayeeEmail.vue'
-import PayeeSpecifiedTaxRegistrationConfirm from '@/components/Form-Page/PayerPayeeTradePartyDocument/Payee-components/PayeeSpecifiedTaxRegistration.vue'
-import PayeeTradePartyConfirm from '@/components/Form-Page/PayerPayeeTradePartyDocument/Payee-components/PayeeTradeParty.vue'
-import PayeeTradePartyAddressConfirm from '@/components/Form-Page/PayerPayeeTradePartyDocument/Payee-components/PayeeTradePartyAddress.vue'
+import PayeeEmailConfirm from '@/components/Confirm-Page/PayerPayeeTradePartyDocument/Payee-components/PayeeEmailConfirm.vue'
+import PayeeSpecifiedTaxRegistrationConfirm from '@/components/Confirm-Page/PayerPayeeTradePartyDocument/Payee-components/PayeeSpecifiedTaxRegistrationConfirm.vue'
+import PayeeTradePartyConfirm from '@/components/Confirm-Page/PayerPayeeTradePartyDocument/Payee-components/PayeeTradePartyConfirm.vue'
+import PayeeTradePartyAddressConfirm from '@/components/Confirm-Page/PayerPayeeTradePartyDocument/Payee-components/PayeeTradePartyAddressConfirm.vue'
 export default{
   components: {
     PayeeEmailConfirm,
