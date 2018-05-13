@@ -21,6 +21,6 @@ export default {
     Email,
     PostalTradeAddress
   },
-  props: ['recipientFormProp']
+  props: ['recipientProp']
 }
 </script>
