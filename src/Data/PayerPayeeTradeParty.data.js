@@ -1,30 +1,30 @@
-export default{
-  data: {
-    payerPayeeTradeParty: {
-      id: '',
-      GlobalID: '',
-      Name: ''
-    },
-    payerPayeeSpecifiedTaxRegistration: {
-      TaxID: ''
-    },
-    payerPayeeEmail: {
-      Email: ''
-    },
-    payerPayeeTradePartyAddress: {
-      BuildingName: '',
-      BuildingNo: '',
-      Alley: '',
-      Village: '',
-      VillageNo: '',
-      Street: '',
-      SubDistrict: '',
-      District: '',
-      SubCountry: '',
-      CountryCode: '',
-      PostCode: '',
-      AddrLineOne: '',
-      AddrLineTwo: ''
-    }
-  }
-}
++export default{
++  data: {
++    payerPayeeTradeParty: {
++      id: '',
++      globalID: '',
++      name: ''
++    },
++    payerPayeeSpecifiedTaxRegistration: {
++      taxID: ''
++    },
++    payerPayeeEmail: {
++      eMail: ''
++    },
++    payerPayeeTradePartyAddress: {
++      buildingName: '',
++      buildingNo: '',
++      alley: '',
++      village: '',
++      villageNo: '',
++      street: '',
++      subDistrict: '',
++      district: '',
++      subCountry: '',
++      countryCode: '',
++      postCode: '',
++      addrLineOne: '',
++      addrLineTwo: ''
++    }
++  }
++}

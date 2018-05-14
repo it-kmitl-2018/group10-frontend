@@ -1,6 +1,6 @@
 <template>
   <div>
-      <label>เลขประจำตัวผู้เสียภาษีอากร (ผู้ชำระเงิน) : </label><input type="text" v-model="payerSpecifiedTaxRegistrationProp.TaxID"/><br>
+      <label>เลขประจำตัวผู้เสียภาษีอากร (ผู้ชำระเงิน) : </label><input type="text" v-model="payerSpecifiedTaxRegistrationProp.taxID"/><br>
   </div>
 </template>
 <script>
