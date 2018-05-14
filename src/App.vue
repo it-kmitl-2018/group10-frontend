@@ -1,13 +1,21 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <div>
+        <router-link :to="{name: 'App'}"> หน้าแรก </router-link>
+        <router-link :to="{name: 'ElectronicTaxInvoiceForm'}"> ใบเสร็จ </router-link>
+        <!--<router-link :to="{name: 'ElectronicTaxInvoiceForm'}"> ใบแจ้งหนี้ </router-link> -->
+    </div>
     <router-view/>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  data () {
+    return {
+    }
+  }
 }
 </script>
 

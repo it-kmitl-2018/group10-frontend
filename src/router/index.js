@@ -1,15 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-
+import ElectronicTaxInvoiceForm from '@/components/Form-Page/PayerPayeeTradePartyDocument/electronicTaxInvoiceForm.vue'
 Vue.use(Router)
-
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      path: '/ElectronicTaxInvoiceForm',
+      name: 'ElectronicTaxInvoiceForm',
+      component: ElectronicTaxInvoiceForm
     }
   ]
 })
