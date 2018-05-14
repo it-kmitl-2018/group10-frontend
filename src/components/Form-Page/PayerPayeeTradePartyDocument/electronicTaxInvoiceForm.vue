@@ -4,7 +4,7 @@
     <h1>ใบเสร็จอิเล็กทรอนิกส์</h1>
     <div>
       <div style="display:inline-block;margin:2%">
-        <PayeeTradePartyForm :PayeeProps="payeeTradePartyData"></PayeeTradePartyForm>
+        <PayeeTradePartyForm :payeeProps="payeeTradePartyData"></PayeeTradePartyForm>
       </div>
     </div>
     <br>
