@@ -1,6 +1,6 @@
 <template>
   <div>
-    <label>อีเมล (ผู้ชำระเงิน) : </label><input type="text" v-model="ConfirmPayerEmailProp.Email"/><br>
+    <label>อีเมล (ผู้ชำระเงิน) : </label><input type="text" v-model="confirmPayerEmailProp.Email"/><br>
   </div>
 </template>
 <script>
