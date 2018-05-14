@@ -4,10 +4,10 @@
     <h1>ใบเสร็จอิเล็กทรอนิกส์</h1>
     <div>
       <div style="display:inline-block;margin:2%">
-        <PayerTradePartyForm :PayerProps="payerPayeeTradePartyData"></PayerTradePartyForm>
+        <PayerTradePartyForm :PayerProps="payerTradePartyData"></PayerTradePartyForm>
       </div>
       <div style="display:inline-block;margin:2%">
-        <PayeeTradePartyForm :PayeeProps="payerPayeeTradePartyData"></PayeeTradePartyForm>
+        <PayeeTradePartyForm :PayeeProps="payeeTradePartyData"></PayeeTradePartyForm>
       </div>
     </div>
     <br>
@@ -22,7 +22,8 @@ import {AXIOS} from '@/http-commons.js'
 export default {
   data () {
     return {
-      payerPayeeTradePartyData: payerPayeeTradePartyData.data
+      payerTradePartyData: JSON.parse(JSON.stringify(payerPayeeTradePartyData.data)),
+      payeeTradePartyData: JSON.parse(JSON.stringify(payerPayeeTradePartyData.data))
     }
   },
   components: {
@@ -31,7 +32,7 @@ export default {
   },
   methods: {
     sendData () {
-      console.log(JSON.stringify(PayerProps))
+      console.log(payerPayeeTradePartyData.data)
       AXIOS.post('/ElectronicReceipt', payerPayeeTradePartyData.data)
         .then(response => {
           console.log(response.data)
