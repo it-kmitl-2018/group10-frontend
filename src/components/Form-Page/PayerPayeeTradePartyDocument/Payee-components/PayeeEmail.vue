@@ -1,10 +1,10 @@
 <template>
   <div>
-    <label>อีเมล (ผู้รับชำระเงิน) : </label><input type="text" v-model="payerEmailProp.eMail"/><br>
+    <label>อีเมล (ผู้รับชำระเงิน) : </label><input type="text" v-model="payeeEmailProp.eMail"/><br>
   </div>
 </template>
 <script>
 export default {
-  props: ['payerEmailProp']
+  props: ['payeeEmailProp']
 }
 </script>
