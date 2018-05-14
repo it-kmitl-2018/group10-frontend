@@ -1,10 +1,10 @@
 <template>
   <div>
-      <label>เลขประจำตัวผู้เสียภาษีอากร (ผู้รับชำระเงิน) : </label><input type="text" v-model="PayeeSpecifiedTaxRegistrationProp.TaxID"/><br>
+      <label>เลขประจำตัวผู้เสียภาษีอากร (ผู้รับชำระเงิน) : </label><input type="text" v-model="payeeSpecifiedTaxRegistrationProp.TaxID"/><br>
   </div>
 </template>
 <script>
 export default {
-  props: ['PayeeSpecifiedTaxRegistrationProp']
+  props: ['payeeSpecifiedTaxRegistrationProp']
 }
 </script>
