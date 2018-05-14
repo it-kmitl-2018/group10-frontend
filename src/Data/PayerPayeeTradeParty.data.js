@@ -2,29 +2,29 @@ export default{
   data: {
     payerPayeeTradeParty: {
       id: '',
-      GlobalID: '',
-      Name: ''
+      globalID: '',
+      name: ''
     },
     payerPayeeSpecifiedTaxRegistration: {
-      TaxID: ''
+      taxID: ''
     },
     payerPayeeEmail: {
-      Email: ''
+      eMail: ''
     },
     payerPayeeTradePartyAddress: {
-      BuildingName: '',
-      BuildingNo: '',
-      Alley: '',
-      Village: '',
-      VillageNo: '',
-      Street: '',
-      SubDistrict: '',
-      District: '',
-      SubCountry: '',
-      CountryCode: '',
-      PostCode: '',
-      AddrLineOne: '',
-      AddrLineTwo: ''
+      buildingName: '',
+      buildingNo: '',
+      alley: '',
+      village: '',
+      villageNo: '',
+      street: '',
+      subDistrict: '',
+      district: '',
+      subCountry: '',
+      countryCode: '',
+      postCode: '',
+      addrLineOne: '',
+      addrLineTwo: ''
     }
   }
 }
